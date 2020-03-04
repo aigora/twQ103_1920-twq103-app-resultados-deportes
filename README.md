@@ -6,7 +6,7 @@ Programa en el que se podrá buscar los datos y curiosidades de diferentes depor
 
 Diego Alarcón Bastida, dab0025
 Juan Santamaría Lillo, juansantamaria
-Juan Martín García, 
+Juan Martín García, juaan58
 
 ## Objetivos del trabajo
 
