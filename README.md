@@ -1,10 +1,13 @@
-# Título del trabajo
+# App Resultados Deporte 
 
-Descripción breve del proyecto a realizar (2-3 frases).
+Programa en el que se podrá buscar los datos y curiosidades de diferentes deportes.
 
 ## Integrantes del equipo
 
 Nombres, apellidos, y usuario GitHub de los integrantes del equipo.
+Diego Alarcón Bastida, 
+Juan Santamaría Lillo, juansantamaria
+Juan 
 
 ## Objetivos del trabajo
 
