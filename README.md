@@ -4,10 +4,9 @@ Programa en el que se podrá buscar los datos y curiosidades de diferentes depor
 
 ## Integrantes del equipo
 
-Nombres, apellidos, y usuario GitHub de los integrantes del equipo.
-Diego Alarcón Bastida, 
+Diego Alarcón Bastida, dab0025
 Juan Santamaría Lillo, juansantamaria
-Juan 
+Juan Martín García, 
 
 ## Objetivos del trabajo
 
