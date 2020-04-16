@@ -1,0 +1,11 @@
+--DIA/HORA-------PARTIDOS----
+Viernes_21:00__Alaves-Valencia
+Sabado__13:00__Eibar-Mallorca
+Sabado__16:15__Atletico-Sevilla
+Sabado__18:30__Barcelona-RealSociedad
+Sabado__21:00__Getafe-Celta
+Domingo_12:00__Osasuna-Espanyol
+Domingo_16:15__Valladolid-Athletic
+Domingo_18:30__Levante-Granada
+Domingo_18:30__Villarreal-Leganes
+Domingo_21:00__Betis-RealMadrid

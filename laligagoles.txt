@@ -1,4 +1,4 @@
-NOMBRE_____________________________GOLES
+------NOMBRE-----_______________---GOLES---
 1_LeoMessi(Barcelona)--------------->19
 2_KarimBenzema(RealMadrid)---------->14
 3_LuisSuarez(Barcelona)------------->11

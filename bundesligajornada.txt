@@ -1,0 +1,10 @@
+---DIA/HORA---_-----PARTIDOS-----
+Viernes_21:00__Mainz-Dusseldorf
+Sabado__13:00__BayernMunich-Augsburgo
+Sabado__16:15__Monchengladbach-Dortmund
+Sabado__18:30__Schalke-Hoffenheim
+Sabado__21:00__Friburgo-UnionBerlin
+Domingo_12:00__HerthaBerlin-WerderBremen
+Domingo_16:15__Wolfsburgo-Leipzig
+Domingo_18:30__Leverkusen-Eintrach
+Domingo_21:00__Paderborn-Colonia
