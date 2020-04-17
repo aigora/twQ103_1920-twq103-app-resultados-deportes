@@ -1,4 +1,4 @@
----EQUIPOS ---____________-PUNTOS-
+---EQUIPOS---____________--PUNTOS--
 1_Liverpool----------------->82
 2_ManchesterCity------------>57
 3_Leicester----------------->53
