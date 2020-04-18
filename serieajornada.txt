@@ -1,0 +1,12 @@
+---DIA/HORA---___-----PARTIDOS------
+Viernes_21:00__Lecce-Milan
+Viernes_21:00__Roma-Sampodria
+Sabado__12:00__Fiorentina-Brescia
+Sabado__12:00__Inter_Saussolo
+Sabado__16:15__Verona-Napoles
+Sabado__18:00__Atalanta-Lazio
+Sabado__20:00__Genoa-Parma
+Domingo_12:00__Bolonia-Juventus
+Domingo_14:00__SPAL-Cagliari
+Domingo_20:00__Torino-Udinese
+

@@ -1,0 +1,13 @@
+---DIA/HORA---___-----PARTIDOS------
+Viernes_21:00__Toulouse-Metz
+Viernes_21:00__Dijon-SaintEtienne
+Sabado__12:00__Monaco-Stasbourg
+Sabado__12:00__PSG-Niza
+Sabado__16:15__Gironds-Rennes
+Sabado__18:00__Nantes-Nimes
+Sabado__20:00__Amiens-Angers
+Domingo_12:00__Lyon-StadeRennais
+Domingo_14:00__Brest-Lille
+Domingo_20:00__Montepellier-Marsella
+
+
