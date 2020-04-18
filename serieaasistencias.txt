@@ -1,24 +1,24 @@
 NOMBRE________________________________________GOLES
-1._LuisAlberto(Lazio)--------------------------<12
-2._A.GomezAtalanta)----------------------------<10
-3._L.Pellegrini(Roma)--------------------------<8
-4._D.Kulusevki(Parma)--------------------------<7
-5._C.Immobile(Lazio)---------------------------<7	
-6._JoseCallejon(Napoles)-----------------------<6
-7._R.Nainggolan(Cagliari)----------------------<6
-8._Bentancur(Juventus)-------------------------<5
-9._Insigne(Napoles)----------------------------<5
-10._D.Berardi(Saussolo)------------------------<5
-11._R.Gosens(Atalanta)-------------------------<5
-12._M.Pasalic(Atalanta)------------------------<5
-13._D.Zapata(Atalanta)-------------------------<5
-14._Ilicic(Atalanta)---------------------------<5
-15._A.Duncan(Sassuolo)-------------------------<5
-16._A.Candreva(Inter)--------------------------<5
-17._P.Ghilione(Genoa)--------------------------<5
-18._RafaelToloi(Atalanta)----------------------<5
-19._Tonali(Brescia)----------------------------<5
-20._M.Brozibic(Inter)--------------------------<5
+1._LuisAlberto(Lazio)-------------------------->12
+2._A.GomezAtalanta)---------------------------->10
+3._L.Pellegrini(Roma)-------------------------->8
+4._D.Kulusevki(Parma)-------------------------->7
+5._C.Immobile(Lazio)--------------------------->7	
+6._JoseCallejon(Napoles)----------------------->6
+7._R.Nainggolan(Cagliari)---------------------->6
+8._Bentancur(Juventus)------------------------->5
+9._Insigne(Napoles)---------------------------->5
+10._D.Berardi(Saussolo)------------------------>5
+11._R.Gosens(Atalanta)------------------------->5
+12._M.Pasalic(Atalanta)------------------------>5
+13._D.Zapata(Atalanta)------------------------->5
+14._Ilicic(Atalanta)--------------------------->5
+15._A.Duncan(Sassuolo)------------------------->5
+16._A.Candreva(Inter)-------------------------->5
+17._P.Ghilione(Genoa)-------------------------->5
+18._RafaelToloi(Atalanta)---------------------->5
+19._Tonali(Brescia)---------------------------->5
+20._M.Brozibic(Inter)-------------------------->5
 
 
 
