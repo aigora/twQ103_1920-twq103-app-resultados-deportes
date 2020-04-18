@@ -377,7 +377,8 @@ while(contrasena!=1234);
 								  printf(" 4. Horarios proxima jornada\n \n");
 								  scanf("%d", &eleccion2);	
 								  break;
-								 case 3: 
+								 case 3:
+						     		  printf("\nEUROLIGA \n \n"); 
 								  printf("Escoja los datos que quiera ver:\n");
 								  printf(" 1. Maximos anotadores\n \n");
 								  printf(" 2. Maximos asistentes\n \n");
