@@ -2,6 +2,8 @@
 #include <conio.h>
 #include <string.h> 
 struct datos{
+	char usuario[500];
+	char contrasena[500];
 	char anotadores[500];
 	char asistentes[500];
 	char clasificacion[500];
@@ -12,11 +14,13 @@ int main(){
 	FILE * pf;
 	struct datos futbol[50];
 	struct datos baloncesto[50];
-	int opcion, eleccion1, eleccion2;
-	char usuario[100];
-	char volver;
-	int contrasena;
-	int control=0;
+	struct datos inicioSesion[50];
+	int opcion, eleccion1, eleccion2, inicio;
+	char volver[100];
+	char usuarioycontrasena[100];
+	int contador;
+	int resultado;
+	int i, j;
 	
 	
 	printf("     AAA        PPPPPPPP     PPPPPPPP   \n");
@@ -27,16 +31,67 @@ int main(){
 	printf("AA         AA   PPP          PPP        \n");
 	printf("---------------------------------------------------------\n");
 	
-	do{
-	
-	printf("Introduzca su usuario para entrar\n");
-	printf("Usuario:");
-	gets(usuario);
-	printf("\n");
-	printf("Contrasena:");
-	scanf("%d", &contrasena);
-}
-while(contrasena!=1234);
+	do{ 
+		contador=0;
+		printf("Pulse 1 para iniciar sesion.\n");
+		printf("Pulse 2 para registrarse.\n");
+		scanf("%d", &inicio);
+		switch(inicio){
+			case 1:
+				do{
+					contador=0;
+					printf("Introduzca el usuario y la contrasena con un guion entre medias.\n");
+					fflush(stdin);
+					gets(usuarioycontrasena);
+					
+					pf=fopen("usuarios.txt","r");
+					if(pf==NULL){
+						printf("Fichero no encontrado");
+						return 0;
+					}
+					while(fscanf(pf,"%s",inicioSesion[contador].usuario)!=EOF){
+						contador++;
+					}
+					fclose(pf);
+					
+					for(i=0;i<contador;i++){
+						j=0;
+						while(usuarioycontrasena[j] !='\0' && inicioSesion[i].usuario[j]!='\0'){
+							if(usuarioycontrasena[j]==inicioSesion[i].usuario[j]){
+								resultado=1;
+							}else {
+								resultado=0;
+								break;
+							}
+							j++;
+						}
+						if(resultado==1){
+							break;
+						}
+					}
+					if(resultado==0){
+						printf("Usuario o contrasena erroneos.\n");
+					}										
+				}while(resultado==0);
+				break;
+			case 2:
+				printf("Introduzca el usuario y la contrasena con un guion entre medias.\n");
+				fflush(stdin);
+				gets(usuarioycontrasena);
+				
+				pf=fopen("usuarios.txt","a");
+				if(pf==NULL){
+					printf("Fichero no encontrado");
+					return 0;
+				}
+				fprintf(pf,"\n%s",usuarioycontrasena);
+				fclose(pf);	
+				break;
+			default:
+				printf("Numero erroneo\n.");
+				break;		
+		}
+	}while(inicio>2);
 	
 	
 	do{
