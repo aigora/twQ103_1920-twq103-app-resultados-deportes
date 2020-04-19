@@ -461,7 +461,7 @@ int main(){
 										fclose(pf);
 										printf("\nPulse cualquier letra para volver al menu\n");
 										fflush(stdin);
-										scanf("%c", %volver);
+										scanf("%c", &volver);
 										
 										break;
 										
