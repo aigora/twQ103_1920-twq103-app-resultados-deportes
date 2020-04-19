@@ -1,0 +1,10 @@
+--DIA/HORA-------PARTIDOS----
+Miercoles_21:00__Barça-SanPabloBurgos
+Jueves__13:00__ValenciaBasket-KirolbetBaskonia
+Jueves__16:15__Unicaja-BaxiManresa
+Jueves__18:30__HerbalifeGranCanaria-IberostarTenerife
+Jueves__21:00__MoraBancAndorra-BilbaoBasket
+Jueves_12:00__MontakitFuenlabrada-RealMadrid
+Jueves_16:15__UcamMurcia-MovistarEstudiantes
+Domingo_18:30__CasademontZaragoza-CoosurRealBetis
+Jueves_18:30__MonbusObradoiro-JoventutBadalona

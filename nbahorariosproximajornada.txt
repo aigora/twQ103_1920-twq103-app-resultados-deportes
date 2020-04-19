@@ -1,0 +1,6 @@
+--DIA/HORA-------PARTIDOS----
+Viernes_00:00__Magic-Bulls
+Viernes__01:00__Bucks-Celtics
+Viernes__03:00__TrailBlazers-Grizzlies
+Viernes__03:30__Warriors-Nets
+Viernes__03:30__Lakers-Rockets

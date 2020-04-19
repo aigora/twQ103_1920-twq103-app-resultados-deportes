@@ -1,0 +1,19 @@
+---EQUIPOS ---_________-GANADOS/PERDIDOS-
+1_AnadoluEfes-------------->24/4
+2_RealMadrid------------->22/6
+3_Barça---------------->22/6
+4_Maccabi----------->19/9
+5_CskaMoscu----------------->19/9
+6_Panathinaikos--------------->14/14
+7_KhimkiMoscu--------------->13/15
+8_Fenerbahce------------->13/15
+9_Olympiacos---------------->12/16
+10_OlimpiaMilan-------------->12/16
+11_ZalgiriKaunas---------------->12/16
+12_ValenciaBasket----------------->12/16
+13_KirolbetBaskonia--------------->12/16
+14_EstrellaRoja---------------->11/17
+15_AsvelVilleurbanne------------>10/18
+16_AlbaBerlin----------------->9/19
+17_BayernMunich-------->8/20
+18_ZenitSanPetersburgo-------->8/20

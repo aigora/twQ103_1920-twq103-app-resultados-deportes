@@ -1,0 +1,11 @@
+----------NOMBRE----------______________----ASISTENCIAS----
+1_MarcelinhoHuertas(IberostarTenerife)-------------------->7.61		
+2_DaniPérez(BaxiManresa)------------------------->6.62
+3_NikosZisis(JoventutBadalona)------------------------------->5.88
+4_OmarCook(HerbalifeGranCanaria)------------------------>7.14
+5_PhilPressey(MovistarEstudiantes)----------------------->4.78
+6_PepePozas(MonbusObradoiro)--------------------->4.39
+7_FerranBassas(SanPabloBurgos)----------------->4.22
+8_PierriaHenry(KirolbetBaskonia)----------------->4.18
+9_FacundoCampazzo(Real Madrid)----------------->4.06
+10_TomásBellas(MontakitFuenlabrada)-------------->4.60

@@ -1,0 +1,11 @@
+-------NOMBRE-------_______________---PUNTOS---
+1_JamesHarden(Rockets)------------->34.36
+2_BradleyBeal(Wizards)------------------>30.54
+3_GiannisAntetokounmpo(Bucks)---------------->29.65
+4_TraeYoung(Hawks)------------------>29.63
+5_DamianLillard(TrailBlazers)------------>28.91
+6_LukaDoncic(Mavericks)------------->28.69
+7_RusselWestbrook(Rockets)------------------>27.47
+8_KawhiLeonard(Clippers)------------->26.86
+9_AnthonyDavis(Lakers)------>26.67
+10_DevinBooker(Suns)---------------->26.11
