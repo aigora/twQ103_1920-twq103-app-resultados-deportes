@@ -402,7 +402,7 @@ int main(){
 										scanf("%c", &volver);
 										break;
 									case 4:
-										pf=fopen("bundesligajornada.txt","r");
+										pf=fopen("ligue1jornada.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
 									    	return 0;	
