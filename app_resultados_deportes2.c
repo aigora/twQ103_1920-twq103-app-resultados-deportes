@@ -591,6 +591,82 @@ int main(){
 								  printf(" 4. Clasificacion Oeste\n \n");
 								  printf(" 5.Horarios proxima jornada\n \n");
 								  scanf("%d", &eleccion2);
+								  switch(eleccion2){
+				     	   			case 1:
+										pf= fopen("nbaanotadores.txt", "r");
+										if (pf== NULL){
+											printf("No se encuentra el fichero\n");
+											return 0;
+										}
+										while(fscanf(pf,"%s", baloncesto[eleccion2-1].anotadores) != EOF) {
+											printf("%s\n", baloncesto[eleccion2-1].anotadores);
+										}
+										fclose(pf);
+										printf("\nPulse cualquier letra para volver al menu \n");
+										fflush(stdin);
+										scanf("%c", &volver);
+										break;
+									case 2:
+								    	pf=fopen("nbaasistencias.txt","r");
+								    	if(pf==NULL){
+									    	printf("No se ha podidio abrir el fichero\n");
+									    	return 0;	
+										}
+										while(fscanf(pf,"%s",baloncesto[eleccion2-1].asistentes)!=EOF){
+											printf("%s\n",baloncesto[eleccion2-1].asistentes);	
+										}
+										fclose(pf);
+										printf("\nPulse cualquier letra para voler al menu\n");
+										fflush(stdin);
+										scanf("%c", &volver);
+										break;
+									case 3:
+										pf=fopen("nbaclasificacioneste.txt","r");
+								    	if(pf==NULL){
+									    	printf("No se ha podidio abrir el fichero\n");
+									    	return 0;	
+										}
+										while(fscanf(pf,"%s",baloncesto[eleccion2-1].clasificacion)!=EOF) {
+											printf("%s\n",baloncesto[eleccion2-1].clasificacion);	
+										}
+										fclose(pf);
+										printf("\nPulse cualquier letra para volver al menu\n");
+										fflush(stdin);
+										scanf("%c", &volver);
+										break;
+									case 4:
+										pf=fopen("nbaclasificacionoeste.txt","r");
+								    	if(pf==NULL){
+									    	printf("No se ha podidio abrir el fichero\n");
+									    	return 0;	
+										}
+										while(fscanf(pf,"%s",baloncesto[eleccion2-1].clasificacion)!=EOF) {
+											printf("%s\n",baloncesto[eleccion2-1].clasificacion);	
+										}
+										fclose(pf);
+										printf("\nPulse cualquier letra para volver al menu\n");
+										fflush(stdin);
+										scanf("%c", &volver);
+										break;	
+									case 5:
+										pf=fopen("nbahorariosproximajornada.txt","r");
+								    	if(pf==NULL){
+									    	printf("No se ha podidio abrir el fichero\n");
+									    	return 0;	
+										}
+										while(fscanf(pf,"%s",baloncesto[eleccion2-1].proxJornada)!=EOF) {
+											printf("%s\n",baloncesto[eleccion2-1].proxJornada);	
+										}
+										fclose(pf);
+										printf("\nPulse cualquier letra para volver al menu\n");
+										fflush(stdin);
+										scanf("%c", &volver);
+										break;
+									default:
+										printf("Numero no valido\n");
+										break;																	     	      				
+								   }
+				     	      	break;
 								  
 								  
 								  break;
@@ -601,7 +677,75 @@ int main(){
 					 			  printf(" 2. Maximos asistentes");
 								  printf(" 3. Clasificacion\n \n");
 								  printf(" 4. Horarios proxima jornada\n \n");
-								  scanf("%d", &eleccion2);	
+								  scanf("%d", &eleccion2);
+								  switch(eleccion2){	
+									case 1:	
+										pf= fopen("acbanotadores.txt", "r");
+										if (pf== NULL){
+											printf("No se encuentra el fichero\n");
+											return 0;
+										}
+										while(fscanf(pf,"%s", baloncesto[eleccion2-1].anotadores) != EOF) {
+											printf("%s\n", baloncesto[eleccion2-1].anotadores);
+										}
+										fclose(pf);
+										printf("\nPulse cualquier letra para volver al menu \n");
+										fflush(stdin);
+										scanf("%c", &volver);
+										
+										
+										break;
+									 case 2:
+										pf=fopen("acbasistencias.txt","r");
+										if(pf==NULL){
+											printf("No se encuentra el fichero\n");
+										        return 0;
+										}
+										while(fscanf(pf,"%s", baloncesto[eleccion2-1].asistentes)!=EOF)
+										{
+										printf("%s\n", baloncesto[eleccion2-1].asistentes);
+										}
+										fclose(pf);
+										printf("\nPulse cualquier letra para volver al menu\n");
+										fflush(stdin);
+										scanf("%c", &volver);
+										
+										break;
+										
+									case 3:
+										pf=fopen("acbclasificacion.txt","r");
+								    	if(pf==NULL){
+									    	printf("No se ha podidio abrir el fichero\n");
+									    	return 0;	
+										}
+										while(fscanf(pf,"%s",baloncesto[eleccion2-1].clasificacion)!=EOF) {
+											printf("%s\n",baloncesto[eleccion2-1].clasificacion);	
+										}
+										fclose(pf);
+										printf("\nPulse cualquier letra para volver al menu\n");
+										fflush(stdin);
+										scanf("%c", &volver);
+										break;
+									case 4:
+										pf=fopen("acbhorariosproximajornada.txt","r");
+								    	if(pf==NULL){
+									    	printf("No se ha podidio abrir el fichero\n");
+									    	return 0;	
+										}
+										while(fscanf(pf,"%s",baloncesto[eleccion2-1].proxJornada)!=EOF) {
+											printf("%s\n",baloncesto[eleccion2-1].proxJornada);	
+										}
+										fclose(pf);
+										printf("\nPulse cualquier letra para volver al menu\n");
+										fflush(stdin);
+										scanf("%c", &volver);
+										break;
+									default:
+										printf("Numero no valido\n");
+										break;
+									}
+					          	break;	
+											
 								  break;
 								 case 3:
 						     		  printf("\nEUROLIGA \n \n"); 
@@ -611,6 +755,73 @@ int main(){
 								  printf(" 3. Clasificacion grupos\n \n");
 								  printf(" 4.Horarios proxima jornada\n \n");
 								  scanf("%d", &eleccion2);
+								  switch(eleccion2){	
+									case 1:	
+										pf= fopen("euroligaanotadores.txt", "r");
+										if (pf== NULL){
+											printf("No se encuentra el fichero\n");
+											return 0;
+										}
+										while(fscanf(pf,"%s", baloncesto[eleccion2-1].anotadores) != EOF) {
+											printf("%s\n", baloncesto[eleccion2-1].anotadores);
+										}
+										fclose(pf);
+										printf("\nPulse cualquier letra para volver al menu \n");
+										fflush(stdin);
+										scanf("%c", &volver);
+										
+										
+										break;
+									 case 2:
+										pf=fopen("euroligaasistencias.txt","r");
+										if(pf==NULL){
+											printf("No se encuentra el fichero\n");
+										        return 0;
+										}
+										while(fscanf(pf,"%s", baloncesto[eleccion2-1].asistentes)!=EOF)
+										{
+										printf("%s\n", baloncesto[eleccion2-1].asistentes);
+										}
+										fclose(pf);
+										printf("\nPulse cualquier letra para volver al menu\n");
+										fflush(stdin);
+										scanf("%c", &volver);
+										
+										break;
+										
+									case 3:
+										pf=fopen("euroligaclasificacion.txt","r");
+								    	if(pf==NULL){
+									    	printf("No se ha podidio abrir el fichero\n");
+									    	return 0;	
+										}
+										while(fscanf(pf,"%s",baloncesto[eleccion2-1].clasificacion)!=EOF) {
+											printf("%s\n",baloncesto[eleccion2-1].clasificacion);	
+										}
+										fclose(pf);
+										printf("\nPulse cualquier letra para volver al menu\n");
+										fflush(stdin);
+										scanf("%c", &volver);
+										break;
+									case 4:
+										pf=fopen("euroligahorariosproximajornada.txt","r");
+								    	if(pf==NULL){
+									    	printf("No se ha podidio abrir el fichero\n");
+									    	return 0;	
+										}
+										while(fscanf(pf,"%s",baloncesto[eleccion2-1].proxJornada)!=EOF) {
+											printf("%s\n",baloncesto[eleccion2-1].proxJornada);	
+										}
+										fclose(pf);
+										printf("\nPulse cualquier letra para volver al menu\n");
+										fflush(stdin);
+										scanf("%c", &volver);
+										break;
+									default:
+										printf("Numero no valido\n");
+										break;
+									}
+					          	break;	
 								  break;
 								 case 4:
 								  break; 									 
