@@ -1,11 +1,11 @@
 -------NOMBRE-------_______________---PUNTOS---
-1_KlemenPrepelic(JoventutBadalona)------------->22.28
-2_NikolaMirotic(Barça)------------------>20.65
-3_GiorgiShermadini(IberostarTenerife)---------------->18.33
-4_Axel Bouteille(BilbaoBasket)------------------>17.61
-5_AskiaBooker(UcamMurcia)------------>20.80
-6_TornikeShengelia(KirolbetBaskonia)------------->16.22
-7_JarrellEddie(UcamMurcia)------------------>16.22
-8_VitorBenite(SanPabloBurgos)------------->13.67
-9_DejanKravic(MonbusObradoiro)------>13.67
+1_KlemenPrepelic(JoventutBadalona)--------------------->22.28
+2_NikolaMirotic(Barça)--------------------------------->20.65
+3_GiorgiShermadini(IberostarTenerife)------------------>18.33
+4_AxelBouteille(BilbaoBasket)-------------------------->17.61
+5_AskiaBooker(UcamMurcia)------------------------------>20.80
+6_TornikeShengelia(KirolbetBaskonia)------------------->16.22
+7_JarrellEddie(UcamMurcia)----------------------------->16.22
+8_VitorBenite(SanPabloBurgos)-------------------------->13.67
+9_DejanKravic(MonbusObradoiro)------------------------->13.67
 10_MarcelinhoHuertas(IberostarTenerife)---------------->13.56
