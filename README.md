@@ -1,6 +1,6 @@
 # App Resultados Deporte 
 
-Programa en el que se podrá buscar los datos y curiosidades de diferentes deportes.
+Programa en el que se podrá buscar diferentes datos y estadisticas como las clasificaciones o los mejores jugadores de diferentes competiciones de futbol y baloncesto.
 
 ## Integrantes del equipo
 
