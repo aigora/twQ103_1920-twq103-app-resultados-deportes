@@ -1,19 +1,19 @@
 ---EQUIPOS ---_________-GANADOS/PERDIDOS-
-1_Barça-------------->19/4
-2_RealMadrid------------->18/5
+1_Barça----------------------------->19/4
+2_RealMadrid------------------------>18/5
 3_CasademontZaragoza---------------->16/7
-4_IberostarTenerife----------->14/8
-5_ BilbaoBasket----------------->14/9
-6_MoraBancAndorra--------------->13/10
-7_Unicaja--------------->12/11
-8_ValenciaBasket------------->12/11
-9_San PabloBurgos---------------->12/11
-10_KirolbetBaskonia-------------->12/11
-11_HerbalifeGranCanaria---------------->11/11
-12_MonbusObradoiro----------------->9/14
-13_JoventutBadalona--------------->9/14
-14_BaxiManresa---------------->9/14
-15_CoosurRealBetis------------>8/15
-16_UcamMurcia----------------->7/15
-17_MontakitFuenlabrada-------->5/17
-18_MovistarEstudiantes-------->5/18
+4_IberostarTenerife----------------->14/8
+5_BilbaoBasket---------------------->14/9
+6_MoraBancAndorra------------------->13/10
+7_Unicaja--------------------------->12/11
+8_ValenciaBasket-------------------->12/11
+9_SanPabloBurgos-------------------->12/11
+10_KirolbetBaskonia----------------->12/11
+11_HerbalifeGranCanaria------------->11/11
+12_MonbusObradoiro------------------>9/14
+13_JoventutBadalona----------------->9/14
+14_BaxiManresa---------------------->9/14
+15_CoosurRealBetis------------------>8/15
+16_UcamMurcia----------------------->7/15
+17_MontakitFuenlabrada-------------->5/17
+18_MovistarEstudiantes-------------->5/18
