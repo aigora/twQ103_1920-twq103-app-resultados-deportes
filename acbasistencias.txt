@@ -7,5 +7,5 @@
 6_PepePozas(MonbusObradoiro)------------------------------>4.39
 7_FerranBassas(SanPabloBurgos)---------------------------->4.22
 8_PierriaHenry(KirolbetBaskonia)-------------------------->4.18
-9_FacundoCampazzo(RealMadrid)---------------------------->4.06
+9_FacundoCampazzo(RealMadrid)----------------------------->4.06
 10_TomasBellas(MontakitFuenlabrada)----------------------->4.60
