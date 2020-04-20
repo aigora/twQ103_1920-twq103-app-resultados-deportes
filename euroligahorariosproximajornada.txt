@@ -1,10 +1,10 @@
 --DIA/HORA-------PARTIDOS----
-Jueves_18:00__CskaMoscu-AlbaBerlin
+Jueves__18:00__CskaMoscu-AlbaBerlin
 Jueves__18:30__AnadoluEfes-ValenciaBasket
 Jueves__20:05__Maccabi-KirolbetBaskonia
 Jueves__20:45__OlimpiaMilan-Olympiacos
 Jueves__21:00__RealMadrid-EstrellaRoja
-Viernes_18:00__KhimkiMoscu-BayernMunich
-Viernes_18:30__Fenerbahce-Panathinaikos
-Viernes_20:45__AsvelVilleurbanne-ZenitSanPetersburgo
-Viernes_21:00__Barça-ZalgirisKaunas
+Viernes__18:00__KhimkiMoscu-BayernMunich
+Viernes__18:30__Fenerbahce-Panathinaikos
+Viernes__20:45__AsvelVilleurbanne-ZenitSanPetersburgo
+Viernes__21:00__Barça-ZalgirisKaunas
