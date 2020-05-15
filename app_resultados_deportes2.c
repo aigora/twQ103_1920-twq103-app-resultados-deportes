@@ -10,6 +10,13 @@ struct datos{
 	char proxJornada[500];
 		
 };
+void banner();		void menuSerieA();
+void mainMenu();	void menuLigue1(); 
+void menufutbol();	void menuChampions();
+void menuLaliga();	
+void menuPremier();	
+void menuBundes();	
+int inicioSes(struct datos inicioSesion[]);
 int main(){
 	FILE * pf;
 	struct datos futbol[50];
@@ -17,136 +24,41 @@ int main(){
 	struct datos inicioSesion[50];
 	int opcion, eleccion1, eleccion2, inicio;
 	char volver[100];
-	char usuarioycontrasena[100];
-	int contador;
-	int resultado;
-	int i, j;
+	int i;
 	
-	
-	printf("     AAA        PPPPPPPP     PPPPPPPP   \n");
-	printf("    AA AA       PPP    PP    PPP    PP  \n");
-	printf("   AA   AA      PPP    PP    PPP    PP  \n");
-	printf("  AAAAAAAAA     PPPPPPP      PPPPPPP    \n");
-	printf(" AA       AA    PPP          PPP        \n");
-	printf("AA         AA   PPP          PPP        \n");
-	printf("---------------------------------------------------------\n");
-	
-	do{ 
-		contador=0;
-		printf("Pulse 1 para iniciar sesion.\n");
-		printf("Pulse 2 para registrarse.\n");
-		scanf("%d", &inicio);
-		switch(inicio){
-			case 1:
-				do{
-					contador=0;
-					printf("Introduzca el usuario y la contrasena con un guion entre medias.\n");
-					fflush(stdin);
-					gets(usuarioycontrasena);
-					
-					pf=fopen("usuarios.txt","r");
-					if(pf==NULL){
-						printf("Fichero no encontrado");
-						return 0;
-					}
-					while(fscanf(pf,"%s",inicioSesion[contador].usuario)!=EOF){
-						contador++;
-					}
-					fclose(pf);
-					
-					for(i=0;i<contador;i++){
-						j=0;
-						while(usuarioycontrasena[j] !='\0' && inicioSesion[i].usuario[j]!='\0'){
-							if(usuarioycontrasena[j]==inicioSesion[i].usuario[j]){
-								resultado=1;
-							}else {
-								resultado=0;
-								break;
-							}
-							j++;
-						}
-						if(resultado==1){
-							break;
-						}
-					}
-					if(resultado==0){
-						printf("Usuario o contrasena erroneos.\n");
-					}										
-				}while(resultado==0);
-				break;
-			case 2:
-				printf("Introduzca el usuario y la contrasena con un guion entre medias.\n");
-				fflush(stdin);
-				gets(usuarioycontrasena);
-				
-				pf=fopen("usuarios.txt","a");
-				if(pf==NULL){
-					printf("Fichero no encontrado");
-					return 0;
-				}
-				fprintf(pf,"\n%s",usuarioycontrasena);
-				fclose(pf);	
-				break;
-			default:
-				printf("Numero erroneo\n.");
-				break;		
-		}
-	}while(inicio>2);
-	
-	
+	banner();
+	inicioSes(inicioSesion);
+		
 	do{
 		system ("cls");
-		printf("     AAA        PPPPPPPP     PPPPPPPP   \n");
-		printf("    AA AA       PPP    PP    PPP    PP  \n");
-		printf("   AA   AA      PPP    PP    PPP    PP  \n");
-		printf("  AAAAAAAAA     PPPPPPP      PPPPPPP    \n");
-		printf(" AA       AA    PPP          PPP        \n");
-		printf("AA         AA   PPP          PPP        \n");
-		printf("---------------------------------------------------------\n");
-		printf("MARCADORES Y RESULTADOS\n\n");
-		
-		printf("1. Futbol\n");
-		
-		printf("2. Baloncesto\n");
-		
-		printf("\n");
-		
-		printf("3. Salir\n");
-		
+		banner();
+		mainMenu();		
 		scanf("%d", &opcion);
 		
 		
 		switch(opcion){
 			case 1:
 				system("cls");
-				printf(" 1. La Liga Santander\n");
-				printf(" 2. Premier League\n");
-				printf(" 3. Bundesliga\n");
-				printf(" 4. Ligue 1\n");
-				printf(" 5. Serie A\n");
-				printf(" 6. Champions League\n");
-				printf("\n");
-				printf(" 7. Volver al menu principal\n");
+				banner();
+				menufutbol();
 				scanf("%d",&eleccion1);
 				     switch(eleccion1){
 				     	      case 1:
 				     	      	system("cls");
-				     	      	printf("\nLALIGA SANTANDER\n \n");
-				     	      	printf("Escoja los datos que quiera ver:\n");
-				     	      	printf(" 1. Maximos goleadores\n \n");
-				     	      	printf(" 2. Maximos asistentes\n \n");
-				     	      	printf(" 3. Clasificacion\n \n");
-				     	      	printf(" 4. Siguiente jornada\n \n");
+				     	      	banner();
+				     	      	menuLaliga();
 				     	      	scanf("%d", &eleccion2);
 				     	   		switch(eleccion2){
 				     	   			case 1:
-										pf= fopen("laligagoles.txt", "r");
+				     	   				system ("cls");
+										banner();
+				     	   				pf= fopen("laligagoles.txt", "r");
 										if (pf== NULL){
 											printf("No se encuentra el fichero\n");
 											return 0;
 										}
-										while(fscanf(pf,"%s", futbol[eleccion2-1].anotadores) != EOF) {
-											printf("%s\n", futbol[eleccion2-1].anotadores);
+										while(fscanf(pf,"%s", futbol[i].anotadores) != EOF) {
+											printf("%s\n", futbol[i].anotadores);
 										}
 										fclose(pf);
 										printf("\nPulse cualquier letra para volver al menu \n");
@@ -154,6 +66,8 @@ int main(){
 										scanf("%c", &volver);
 										break;
 									case 2:
+										system ("cls");
+										banner();
 								    	pf=fopen("laligaasistencias.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -168,6 +82,8 @@ int main(){
 										scanf("%c", &volver);
 										break;
 									case 3:
+										system ("cls");
+										banner();
 										pf=fopen("laligaclasificacion.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -182,6 +98,8 @@ int main(){
 										scanf("%c", &volver);
 										break;
 									case 4:
+										system ("cls");
+										banner();
 										pf=fopen("laligajornada.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -202,16 +120,13 @@ int main(){
 				     	      	break;
 				     	      case 2:
 				     	      	system("cls");
-				     	      	printf("\nPREMIER LEAGUE\n \n");
-				     	      	printf("Escoja los datos que quiera ver:\n");
-				     	      	printf(" 1. Maximos goleadores\n \n");
-				     	      	printf(" 2. Maximos asistentes\n \n");
-				     	      	printf(" 3. Clasificacion\n \n");
-				     	      	printf(" 4. Siguiente jornada\n \n");
-				     	      	fflush(stdin);
+				     	      	banner();
+				     	      	menuPremier();
 				     	      	scanf("%d", &eleccion2);
 				     	      	switch(eleccion2){
 				     	   			case 1:
+				     	   				system ("cls");
+										banner();
 										pf= fopen("premiergoles.txt", "r");
 										if (pf== NULL){
 											printf("No se encuentra el fichero\n");
@@ -226,6 +141,8 @@ int main(){
 										scanf("%c", &volver);
 										break;
 									case 2:
+										system ("cls");
+										banner();
 								    	pf=fopen("premierasistencias.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -240,6 +157,8 @@ int main(){
 										scanf("%c", &volver);
 										break;
 									case 3:
+										system ("cls");
+										banner();
 										pf=fopen("premierclasificacion.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -254,6 +173,8 @@ int main(){
 										scanf("%c", &volver);
 										break;
 									case 4:
+										system ("cls");
+										banner();
 										pf=fopen("premierjornada.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -274,15 +195,13 @@ int main(){
 								break;
 				     	      case 3:
 				     	      	system("cls");
-				     	      	printf("\nBUNDESLIGA\n \n");
-				     	      	printf("Escoja los datos que quiera ver:\n");
-					          	printf(" 1. Maximos goleadores\n \n");
-					          	printf(" 2. Maximos asistentes\n \n");
-					          	printf(" 3. Clasificacion\n \n");
-					          	printf(" 4. Siguiente jornada\n \n");
+				     	      	banner();
+				     	      	menuBundes();
 					          	scanf("%d", &eleccion2);
 					          	switch(eleccion2){
 				     	   			case 1:
+				     	   				system ("cls");
+										banner();
 										pf= fopen("bundesligagoles.txt", "r");
 										if (pf== NULL){
 											printf("No se encuentra el fichero\n");
@@ -297,6 +216,8 @@ int main(){
 										scanf("%c", &volver);
 										break;
 									case 2:
+										system ("cls");
+										banner();
 								    	pf=fopen("bundesligaasistencias.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -311,6 +232,8 @@ int main(){
 										scanf("%c", &volver);
 										break;
 									case 3:
+										system ("cls");
+										banner();
 										pf=fopen("bundesligaclasificacion.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -325,6 +248,8 @@ int main(){
 										scanf("%c", &volver);
 										break;
 									case 4:
+										system ("cls");
+										banner();
 										pf=fopen("bundesligajornada.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -345,16 +270,13 @@ int main(){
 					          	break;
 					          case 4:
 					          	system("cls");
-							    printf("\nLIGUE 1\n \n");
-					          	printf("Escoja los datos que quiera ver:\n");
-				    	      	printf(" 1. Maximos goleadores\n \n");
-				     	      	printf(" 2. Maximos asistentes\n \n");
-				     	      	printf(" 3. Clasificacion\n \n");
-				     	      	printf(" 4. Siguiente jornada\n \n");
-				     	      	fflush(stdin);
+					          	banner();
+							    menuLigue1();
 								scanf("&d", &eleccion2);
 								switch(eleccion2){	
 									case 1:	
+										system ("cls");
+										banner();
 										pf= fopen("ligue1goles.txt", "r");
 										if (pf== NULL){
 											printf("No se encuentra el fichero\n");
@@ -367,10 +289,10 @@ int main(){
 										printf("\nPulse cualquier letra para volver al menu \n");
 										fflush(stdin);
 										scanf("%c",&volver);
-										
-										
 										break;
 									 case 2:
+									 	system ("cls");
+										banner();
 										pf=fopen("ligue1asistencias.txt","r");
 										if(pf==NULL){
 											printf("No se encuentra el fichero\n");
@@ -384,10 +306,10 @@ int main(){
 										printf("\nPulse cualquier letra para volver al menu\n");
 										fflush(stdin);
 										scanf("%c",&volver);
-										
 										break;
-										
 									case 3:
+										system ("cls");
+										banner();
 										pf=fopen("ligue1clasificacion.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -402,6 +324,8 @@ int main(){
 										scanf("%c", &volver);
 										break;
 									case 4:
+										system ("cls");
+										banner();
 										pf=fopen("ligue1jornada.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -420,19 +344,15 @@ int main(){
 										break;
 									}
 					          	break;	
-										
-										
-							
 							   case 5:
-							   printf("\nSERIE A\n \n");
-				     	      	printf("Escoja los datos que quiera ver:\n");
-				     	      	printf(" 1. Maximos goleadores\n \n");
-				     	      	printf(" 2. Maximos asistentes\n \n");
-				     	      	printf(" 3. Clasificacion\n \n");
-				     	      	printf(" 4. Siguiente jornada\n \n");
+							   	system("cls");
+							   	banner();
+							    menuSerieA();
 				     	      	scanf("%d", &eleccion2);
 						     	switch(eleccion2){	
 									case 1:	
+										system ("cls");
+										banner();
 										pf= fopen("serieagoles.txt", "r");
 										if (pf== NULL){
 											printf("No se encuentra el fichero\n");
@@ -449,6 +369,8 @@ int main(){
 										
 										break;
 									 case 2:
+									 	system ("cls");
+										banner();
 										pf=fopen("serieaasistencias.txt","r");
 										if(pf==NULL){
 											printf("No se encuentra el fichero\n");
@@ -462,10 +384,10 @@ int main(){
 										printf("\nPulse cualquier letra para volver al menu\n");
 										fflush(stdin);
 										scanf("%c", &volver);
-										
 										break;
-										
 									case 3:
+										system ("cls");
+										banner();
 										pf=fopen("serieaclasificacion.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -480,6 +402,8 @@ int main(){
 										scanf("%c", &volver);
 										break;
 									case 4:
+										system ("cls");
+										banner();
 										pf=fopen("serieajornada.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -497,21 +421,16 @@ int main(){
 										printf("Numero no valido\n");
 										break;
 									}
-					          	break;	
-										
-							
-						     
-						     
-								break;   	
+					          	break;	   	
 							   case 6:
-							    printf("\nCHAMPIONS LEAGUE\n \n");
-				     	      	printf("Escoja los datos que quiera ver:\n");
-				     	      	printf(" 1. Maximos goleadores\n \n");
-				     	      	printf(" 2. Maximos asistentes\n \n");
-				     	      	printf(" 3. Clasificacion grupos\n \n");	    
+							   	system("cls");
+							   	banner();
+							    menuChampions();	    
 				     	      	scanf("%d", &eleccion2);
 						     	switch(eleccion2){	
 									case 1:	
+										system ("cls");
+										banner();
 										pf= fopen("Championsgoles.txt", "r");
 										if (pf== NULL){
 											printf("No se encuentra el fichero\n");
@@ -528,6 +447,8 @@ int main(){
 										
 										break;
 									 case 2:
+									 	system ("cls");
+										banner();
 										pf=fopen("Championsasistencias.txt","r");
 										if(pf==NULL){
 											printf("No se encuentra el fichero\n");
@@ -545,6 +466,8 @@ int main(){
 										break;
 										
 									case 3:
+										system ("cls");
+										banner();
 										pf=fopen("Championsclasificacion.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -575,6 +498,8 @@ int main(){
 					 }
 				break;
 			case 2:
+				system("cls");
+				banner();
 				printf("1. NBA\n");
 				printf("2. ACB\n");
 				printf("3. Euroliga\n");
@@ -583,6 +508,8 @@ int main(){
 				scanf("%d", &eleccion1);
 				     switch(eleccion1){
 					             case 1:
+					              system("cls");
+								  banner();
 					              printf("\nNBA \n \n");	
 					              printf("Escoja los datos que quiera ver:\n");
 								  printf(" 1. Maximos anotadores\n \n");
@@ -593,6 +520,8 @@ int main(){
 								  scanf("%d", &eleccion2);
 								  switch(eleccion2){
 				     	   			case 1:
+				     	   				system ("cls");
+								        banner();
 										pf= fopen("nbaanotadores.txt", "r");
 										if (pf== NULL){
 											printf("No se encuentra el fichero\n");
@@ -607,6 +536,8 @@ int main(){
 										scanf("%c", &volver);
 										break;
 									case 2:
+										system ("cls");
+								        banner();
 								    	pf=fopen("nbaasistencias.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -621,6 +552,8 @@ int main(){
 										scanf("%c", &volver);
 										break;
 									case 3:
+										system ("cls");
+								        banner();
 										pf=fopen("nbaclasificacioneste.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -635,6 +568,8 @@ int main(){
 										scanf("%c", &volver);
 										break;
 									case 4:
+										system ("cls");
+								        banner();
 										pf=fopen("nbaclasificacionoeste.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -649,6 +584,8 @@ int main(){
 										scanf("%c", &volver);
 										break;	
 									case 5:
+										system ("cls");
+								        banner();
 										pf=fopen("nbahorariosproximajornada.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -666,11 +603,10 @@ int main(){
 										printf("Numero no valido\n");
 										break;																	     	      				
 								   }
-				     	      	break;
-								  
-								  
 								  break;
 								 case 2:
+								  system("cls");
+								  banner();
 								  printf("\nACB \n \n"); 
 								  printf("Escoja los datos que quiera ver:\n");
 							      printf(" 1. Maximos anotadores\n \n"); 
@@ -679,7 +615,9 @@ int main(){
 								  printf(" 4. Horarios proxima jornada\n \n");
 								  scanf("%d", &eleccion2);
 								  switch(eleccion2){	
-									case 1:	
+									case 1:
+										system ("cls");
+								        banner();	
 										pf= fopen("acbanotadores.txt", "r");
 										if (pf== NULL){
 											printf("No se encuentra el fichero\n");
@@ -692,10 +630,10 @@ int main(){
 										printf("\nPulse cualquier letra para volver al menu \n");
 										fflush(stdin);
 										scanf("%c", &volver);
-										
-										
 										break;
 									 case 2:
+									 	system ("cls");
+								        banner();
 										pf=fopen("acbasistencias.txt","r");
 										if(pf==NULL){
 											printf("No se encuentra el fichero\n");
@@ -709,10 +647,10 @@ int main(){
 										printf("\nPulse cualquier letra para volver al menu\n");
 										fflush(stdin);
 										scanf("%c", &volver);
-										
 										break;
-										
 									case 3:
+										system ("cls");
+								        banner();
 										pf=fopen("acbclasificacion.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -727,6 +665,8 @@ int main(){
 										scanf("%c", &volver);
 										break;
 									case 4:
+										system ("cls");
+								        banner();
 										pf=fopen("acbhorariosproximajornada.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -743,12 +683,12 @@ int main(){
 									default:
 										printf("Numero no valido\n");
 										break;
-									}
-					          	break;	
-											
+									}	
 								  break;
 								 case 3:
-						     		  printf("\nEUROLIGA \n \n"); 
+								  system("cls");
+								  banner();
+						     	  printf("\nEUROLIGA \n \n"); 
 								  printf("Escoja los datos que quiera ver:\n");
 								  printf(" 1. Maximos anotadores\n \n");
 								  printf(" 2. Maximos asistentes\n \n");
@@ -757,6 +697,8 @@ int main(){
 								  scanf("%d", &eleccion2);
 								  switch(eleccion2){	
 									case 1:	
+										system ("cls");
+								        banner();
 										pf= fopen("euroligaanotadores.txt", "r");
 										if (pf== NULL){
 											printf("No se encuentra el fichero\n");
@@ -773,6 +715,8 @@ int main(){
 										
 										break;
 									 case 2:
+									 	system ("cls");
+								        banner();
 										pf=fopen("euroligaasistencias.txt","r");
 										if(pf==NULL){
 											printf("No se encuentra el fichero\n");
@@ -786,10 +730,10 @@ int main(){
 										printf("\nPulse cualquier letra para volver al menu\n");
 										fflush(stdin);
 										scanf("%c", &volver);
-										
 										break;
-										
 									case 3:
+										system ("cls");
+								        banner();
 										pf=fopen("euroligaclasificacion.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -804,6 +748,8 @@ int main(){
 										scanf("%c", &volver);
 										break;
 									case 4:
+										system ("cls");
+								        banner();
 										pf=fopen("euroligahorariosproximajornada.txt","r");
 								    	if(pf==NULL){
 									    	printf("No se ha podidio abrir el fichero\n");
@@ -839,4 +785,140 @@ int main(){
 				
 	} while(opcion != 3);
 	return 0;
+}
+
+void banner(){
+	printf("     AAA        PPPPPPPP     PPPPPPPP   \n");
+	printf("    AA AA       PPP    PP    PPP    PP  \n");
+	printf("   AA   AA      PPP    PP    PPP    PP  \n");
+	printf("  AAAAAAAAA     PPPPPPP      PPPPPPP    \n");
+	printf(" AA       AA    PPP          PPP        \n");
+	printf("AA         AA   PPP          PPP        \n");
+	printf("---------------------------------------------------------\n");
+}
+int inicioSes(struct datos inicioSesion[]){
+	FILE * pf;
+	int contador, inicio;
+	int resultado;
+	int i;
+	char usuarioycontrasena[50];
+	
+	do{ 
+		contador=0;
+		printf("Pulse 1 para iniciar sesion.\n");
+		printf("Pulse 2 para registrarse.\n");
+		scanf("%d", &inicio);
+		switch(inicio){
+			case 1:
+				do{
+					contador=0;
+					printf("Introduzca el usuario y la contrasena con un guion entre medias.\n");
+					fflush(stdin);
+					gets(usuarioycontrasena);
+					
+					pf=fopen("usuarios.txt","r");
+					if(pf==NULL){
+						printf("Fichero no encontrado");
+						return 0;
+					}
+					while(fscanf(pf,"%s",inicioSesion[contador].usuario)!=EOF){
+						contador++;
+					}
+					fclose(pf);
+					
+					for(i=0;i<contador;i++){
+						resultado=strcmp(usuarioycontrasena,inicioSesion[i].usuario);
+						if(resultado==0){
+							break;
+						}
+					}
+					if(resultado!=0){
+						printf("Usuario o contrasena erroneos.\n");
+					}										
+				}while(resultado!=0);
+				break;
+			case 2:
+				printf("Introduzca el usuario y la contrasena con un guion entre medias.\n");
+				fflush(stdin);
+				gets(usuarioycontrasena);
+				
+				pf=fopen("usuarios.txt","a");
+				if(pf==NULL){
+					printf("Fichero no encontrado");
+					return 0;
+				}
+				fprintf(pf,"\n%s",usuarioycontrasena);
+				fclose(pf);	
+				break;
+			default:
+				printf("Numero erroneo\n.");
+				break;		
+		}
+	}while(inicio>2);	
+}
+void mainMenu(){
+	printf("MARCADORES Y RESULTADOS\n\n");
+	printf("1. Futbol\n");
+	printf("2. Baloncesto\n");
+	printf("\n");
+	printf("3. Salir\n");
+}
+void menufutbol(){
+	printf(" 1. La Liga Santander\n");
+	printf(" 2. Premier League\n");
+	printf(" 3. Bundesliga\n");
+	printf(" 4. Ligue 1\n");
+	printf(" 5. Serie A\n");
+	printf(" 6. Champions League\n");
+	printf("\n");
+	printf(" 7. Volver al menu principal\n");
+}	
+void menuLigue1(){
+	printf("\nLIGUE 1\n \n");
+	printf("Escoja los datos que quiera ver:\n");
+	printf(" 1. Maximos goleadores\n \n");
+	printf(" 2. Maximos asistentes\n \n");
+	printf(" 3. Clasificacion\n \n");
+	printf(" 4. Siguiente jornada\n \n");
+	fflush(stdin);
+} 
+void menuChampions(){
+	printf("\nCHAMPIONS LEAGUE\n \n");
+	printf("Escoja los datos que quiera ver:\n");
+	printf(" 1. Maximos goleadores\n \n");
+	printf(" 2. Maximos asistentes\n \n");
+	printf(" 3. Clasificacion grupos\n \n");
+}
+void menuSerieA(){
+	printf("\nSERIE A\n \n");
+	printf("Escoja los datos que quiera ver:\n");
+	printf(" 1. Maximos goleadores\n \n");
+	printf(" 2. Maximos asistentes\n \n");
+	printf(" 3. Clasificacion\n \n");
+	printf(" 4. Siguiente jornada\n \n");
+}
+void menuLaliga(){
+	printf("\nLALIGA SANTANDER\n \n");
+	printf("Escoja los datos que quiera ver:\n");
+  	printf(" 1. Maximos goleadores\n \n");
+	printf(" 2. Maximos asistentes\n \n");
+	printf(" 3. Clasificacion\n \n");
+ 	printf(" 4. Siguiente jornada\n \n");
+}	
+void menuPremier(){
+	printf("\nPREMIER LEAGUE\n \n");
+   	printf("Escoja los datos que quiera ver:\n");
+   	printf(" 1. Maximos goleadores\n \n");
+   	printf(" 2. Maximos asistentes\n \n");
+   	printf(" 3. Clasificacion\n \n");
+   	printf(" 4. Siguiente jornada\n \n");
+   	fflush(stdin);
+}	
+void menuBundes(){
+	printf("\nBUNDESLIGA\n \n");
+	printf("Escoja los datos que quiera ver:\n");
+	printf(" 1. Maximos goleadores\n \n");
+	printf(" 2. Maximos asistentes\n \n");
+	printf(" 3. Clasificacion\n \n");
+	printf(" 4. Siguiente jornada\n \n");
 }
