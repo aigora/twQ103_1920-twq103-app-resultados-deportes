@@ -13,9 +13,10 @@ struct datos{
 void banner();		void menuSerieA();
 void mainMenu();	void menuLigue1(); 
 void menufutbol();	void menuChampions();
-void menuLaliga();	
-void menuPremier();	
-void menuBundes();	
+void menuLaliga();	void menuBaloncesto();
+void menuPremier();	void menuNBA();
+void menuBundes();	void menuACB();
+void menuEuroliga();
 int inicioSes(struct datos inicioSesion[]);
 int main(){
 	FILE * pf;
@@ -500,23 +501,13 @@ int main(){
 			case 2:
 				system("cls");
 				banner();
-				printf("1. NBA\n");
-				printf("2. ACB\n");
-				printf("3. Euroliga\n");
-				printf("\n");
-				printf("4. Volver al menu principal\n");;
+				menuBaloncesto();
 				scanf("%d", &eleccion1);
 				     switch(eleccion1){
 					             case 1:
 					              system("cls");
 								  banner();
-					              printf("\nNBA \n \n");	
-					              printf("Escoja los datos que quiera ver:\n");
-								  printf(" 1. Maximos anotadores\n \n");
-								  printf(" 2. Maximos asistentes\n \n");
-								  printf(" 3. Clasificacion Este\n \n");
-								  printf(" 4. Clasificacion Oeste\n \n");
-								  printf(" 5.Horarios proxima jornada\n \n");
+					             
 								  scanf("%d", &eleccion2);
 								  switch(eleccion2){
 				     	   			case 1:
@@ -607,12 +598,7 @@ int main(){
 								 case 2:
 								  system("cls");
 								  banner();
-								  printf("\nACB \n \n"); 
-								  printf("Escoja los datos que quiera ver:\n");
-							      printf(" 1. Maximos anotadores\n \n"); 
-					 			  printf(" 2. Maximos asistentes");
-								  printf(" 3. Clasificacion\n \n");
-								  printf(" 4. Horarios proxima jornada\n \n");
+								 
 								  scanf("%d", &eleccion2);
 								  switch(eleccion2){	
 									case 1:
@@ -688,12 +674,7 @@ int main(){
 								 case 3:
 								  system("cls");
 								  banner();
-						     	  printf("\nEUROLIGA \n \n"); 
-								  printf("Escoja los datos que quiera ver:\n");
-								  printf(" 1. Maximos anotadores\n \n");
-								  printf(" 2. Maximos asistentes\n \n");
-								  printf(" 3. Clasificacion grupos\n \n");
-								  printf(" 4.Horarios proxima jornada\n \n");
+						     	
 								  scanf("%d", &eleccion2);
 								  switch(eleccion2){	
 									case 1:	
@@ -922,3 +903,37 @@ void menuBundes(){
 	printf(" 3. Clasificacion\n \n");
 	printf(" 4. Siguiente jornada\n \n");
 }
+void menuBaloncesto(){
+	printf("1. NBA\n");
+	printf("2. ACB\n");
+	printf("3. Euroliga\n");
+	printf("\n");
+	printf("4. Volver al menu principal\n");;
+}
+void menuNBA(){
+       	  printf("\nNBA \n \n");	
+          printf("Escoja los datos que quiera ver:\n");
+	  printf(" 1. Maximos anotadores\n \n");
+	  printf(" 2. Maximos asistentes\n \n");
+	  printf(" 3. Clasificacion Este\n \n");
+	  printf(" 4. Clasificacion Oeste\n \n");
+	  printf(" 5.Horarios proxima jornada\n \n");
+}
+void menuACB(){
+	 printf("\nACB \n \n"); 
+	 printf("Escoja los datos que quiera ver:\n");
+         printf(" 1. Maximos anotadores\n \n"); 
+	 printf(" 2. Maximos asistentes");
+         printf(" 3. Clasificacion\n \n");
+         printf(" 4. Horarios proxima jornada\n \n");
+}
+void menuEuroliga(){
+        printf("\nEUROLIGA \n \n"); 
+        printf("Escoja los datos que quiera ver:\n");
+        printf(" 1. Maximos anotadores\n \n");
+        printf(" 2. Maximos asistentes\n \n");
+        printf(" 3. Clasificacion grupos\n \n");
+        printf(" 4.Horarios proxima jornada\n \n");
+
+}
+	
