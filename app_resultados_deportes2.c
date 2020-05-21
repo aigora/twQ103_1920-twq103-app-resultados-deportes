@@ -25,7 +25,6 @@ int main(){
 	struct datos inicioSesion[50];
 	int opcion, eleccion1, eleccion2, inicio;
 	char volver[100];
-	int i;
 	
 	banner();
 	inicioSes(inicioSesion);
@@ -58,8 +57,8 @@ int main(){
 											printf("No se encuentra el fichero\n");
 											return 0;
 										}
-										while(fscanf(pf,"%s", futbol[i].anotadores) != EOF) {
-											printf("%s\n", futbol[i].anotadores);
+										while(fscanf(pf,"%s", futbol[eleccion2-1].anotadores) != EOF) {
+											printf("%s\n", futbol[eleccion2-1].anotadores);
 										}
 										fclose(pf);
 										printf("\nPulse cualquier letra para volver al menu \n");
