@@ -272,7 +272,7 @@ int main(){
 					          	system("cls");
 					          	banner();
 							    menuLigue1();
-								scanf("&d", &eleccion2);
+								scanf("%d", &eleccion2);
 								switch(eleccion2){	
 									case 1:	
 										system ("cls");
