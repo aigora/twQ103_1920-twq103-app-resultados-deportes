@@ -507,7 +507,7 @@ int main(){
 					             case 1:
 					              system("cls");
 								  banner();
-					             
+								  menuNBA();					        	
 								  scanf("%d", &eleccion2);
 								  switch(eleccion2){
 				     	   			case 1:
@@ -598,7 +598,7 @@ int main(){
 								 case 2:
 								  system("cls");
 								  banner();
-								 
+								  menuACB();								 
 								  scanf("%d", &eleccion2);
 								  switch(eleccion2){	
 									case 1:
@@ -674,7 +674,7 @@ int main(){
 								 case 3:
 								  system("cls");
 								  banner();
-						     	
+								  menuEuroliga();						     	
 								  scanf("%d", &eleccion2);
 								  switch(eleccion2){	
 									case 1:	
@@ -911,29 +911,30 @@ void menuBaloncesto(){
 	printf("4. Volver al menu principal\n");;
 }
 void menuNBA(){
-       	  printf("\nNBA \n \n");	
-          printf("Escoja los datos que quiera ver:\n");
-	  printf(" 1. Maximos anotadores\n \n");
-	  printf(" 2. Maximos asistentes\n \n");
-	  printf(" 3. Clasificacion Este\n \n");
-	  printf(" 4. Clasificacion Oeste\n \n");
-	  printf(" 5.Horarios proxima jornada\n \n");
+    printf("\nNBA \n \n");	
+	printf("Escoja los datos que quiera ver:\n");
+	printf(" 1. Maximos anotadores\n \n");
+	printf(" 2. Maximos asistentes\n \n");
+	printf(" 3. Clasificacion Este\n \n");
+	printf(" 4. Clasificacion Oeste\n \n");
+	printf(" 5.Horarios proxima jornada\n \n");
 }
 void menuACB(){
-	 printf("\nACB \n \n"); 
-	 printf("Escoja los datos que quiera ver:\n");
-         printf(" 1. Maximos anotadores\n \n"); 
-	 printf(" 2. Maximos asistentes");
-         printf(" 3. Clasificacion\n \n");
-         printf(" 4. Horarios proxima jornada\n \n");
+	printf("\nACB \n \n"); 
+	printf("Escoja los datos que quiera ver:\n");
+    printf(" 1. Maximos anotadores\n \n"); 
+	printf(" 2. Maximos asistentes\n \n");
+    printf(" 3. Clasificacion\n \n");
+    printf(" 4. Horarios proxima jornada\n \n");
 }
 void menuEuroliga(){
-        printf("\nEUROLIGA \n \n"); 
-        printf("Escoja los datos que quiera ver:\n");
-        printf(" 1. Maximos anotadores\n \n");
-        printf(" 2. Maximos asistentes\n \n");
-        printf(" 3. Clasificacion grupos\n \n");
-        printf(" 4.Horarios proxima jornada\n \n");
+    printf("\nEUROLIGA \n \n"); 
+    printf("Escoja los datos que quiera ver:\n");
+    printf(" 1. Maximos anotadores\n \n");
+    printf(" 2. Maximos asistentes\n \n");
+    printf(" 3. Clasificacion grupos\n \n");
+    printf(" 4.Horarios proxima jornada\n \n");
 
 }
+	
 	
