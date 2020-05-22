@@ -1,4 +1,4 @@
--------NOMBRE-------_______________---GOLES---
+-------NOMBRE-------------------------GOLES---
 1_Lewandowski(BayernMunic)------------->25
 2_TimoWerner(Leipzig)------------------>21
 3_JadonSancho(Dortmund)---------------->14
